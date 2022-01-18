@@ -38,6 +38,13 @@ Now we may want to extend the perimeter downwards.
 We placed a fence post to the right and further down, but since the older points are no longer on the convex hull we can remove them and still
 have a valid perimeter.
 
+## Would this actually work?
+The concept for the algorithm should work, but of course their would be some hardware limitations, we might need to add some extra logic to 
+ensure that the the posts are within some distance between them. Every post will also need to have some sort of memory and processing component
+as the genesis post will need to do some processing to setup the cartesian plane and be able to store information about itself. The mobile device
+for enabling the perimeter fence will do most of the heavy lifting and then send out the necessary information to the individual posts. There might
+also be some issues to ensure the distributed computation actually works. Besides that there is also the obvious issue with the invisible electrical field
+that shocks anything that comes close, I'm not aware that something like this exists, but maybe this could be useful one day.
 
 ## Test it out
 <a target="blank" href="https://skorpion19091.github.io/Perimeter-fence-constructor/">Fence Construction Perimeter</a>
